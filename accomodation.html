@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://kit.fontawesome.com/a8b14fc7a1.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet"  type = "text/css"href="ts.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <img class="logo" src="mylogo.png">
+  <a href="index.html" style="color:#006666;">Home</a>
+  <a href="adults.html"  style="color:#006666;">Adults</a>
+  <a href="accomodation.html"  style="color:#006666;">Accomodation</a>
+   <a href="reservationpage.html" style="color:#006666;">Dates of Stay</a>
+  <a href="total.php"  style="color:#006666;">Total</a>
+</div>
+<div class="header">
+	<h1 style="color: white;">ACCOMODATION</h1>
+</div>
+<div>
+	<p ><h2 style="font-size: 150%;">Select your choice of accomodation:</h2></p>
+</div>
+<div class="row">
+	<div class="column">
+	<input type="radio" name="room" id="stan" onclick="display()">
+	<label for="stan"> Standard</label>	
+	<p>Price:75,000</p>
+	</div>
+	<div class="column">
+	<input type="radio" name="room" id="del" onclick="display()">	
+	<label for="del"> Deluxe</label>
+	<p>Price:100,000</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column">
+		<input type="radio" name="room" id="vase" onclick="display()">
+		<label for="vase"> Vase</label>
+		<p>Price:175,000</p>
+	</div>
+	<div class="column">
+		<input type="radio" name="room" id="pre" onclick="display()">
+		<label for="pre"> Presidental</label>
+		<p>Price:300,000</p>
+	</div>
+</div>
+<p id="demo"></p>
+<br><br><br>
+<script src="stay.js"></script>
+<footer>
+<div class="footer_bottom">
+    <div class="container1">
+      <p>Copyright © 2020 Mol's Inn. </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

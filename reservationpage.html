@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <script src="https://kit.fontawesome.com/a8b14fc7a1.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet"  type = "text/css"href="ts.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <img class="logo" src="mylogo.png">
+  <a href="index.html" style="color:#006666;">Home</a>
+  <a href="adults.html"  style="color:#006666;">Adults</a>
+  <a href="reservationpage.html" style="color:#006666;">Dates of Stay</a>
+  <a href="total.php"  style="color:#006666;">Total</a>
+</div>
+<div class="header">
+	<h1 style="color: white;">ACCOMODATION & DATES OF STAY </h1>
+</div>
+ 	<form action="total.php" method="post">
+ 	 <div>
+	<p ><h2 style="font-size: 150%;">Select your choice of accomodation:</h2></p>
+</div>
+<div class="row">
+	<div class="column">
+	<input type="radio" name="room" value="Standard" id="stan" onclick="display()">
+	<label for="stan">Standard</label>	
+	<p>Price:75,000</p>
+	</div>
+	<div class="column">
+	<input type="radio" name="room" value="Deluxe" id="del" onclick="display()">
+	<label for="del">Deluxe</label>	
+	<p>Price:100,000</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column">
+		<input type="radio" name="room" value="Vase" id="vase" onclick="display()">
+		<label for="vase">Vase</label>
+		<p>Price:175,000</p>
+	</div>
+	<div class="column">
+		<input type="radio" name="room" value="Presidental" id="pre" onclick="display()">
+		<label for="pre">Presidental</label>
+		<p>Price:300,000</p>
+	</div>
+</div>
+<div>
+
+		<p ><h2 style="font-size: 150%;">Select your dates of stay:</h2></p>
+</div>
+	<input type="text" id="fdate" name="fdate" placeholder="Check-In day" style="border:2px solid; width:50%; margin-top:20px;">
+	<input type="text" id="fmonth" name="fmonth" placeholder="Your check-in month" style="border:2px solid; width:50%; margin-top:20px;">
+	<input type="text" id="ldate" name="ldate" placeholder="Check-out day" style="border:2px solid; width:50%;margin-top:20px;">
+	<input type="text" id="lmonth" name="lmonth" placeholder="Your check-out month" style="border:2px solid; width:50%; margin-top:20px;">
+     <input type="text" id="txtresult"placeholder="Your Days of stay?" name="TextBox3" style="border:2px solid; width:50%; margin-top:20px;">
+     <br><br>
+         <input type="button" id="same" name="clickbtn" value="Display Result"  onclick="dayStay()">
+         <input type="submit" value="Total">
+	</form>
+	<br><br>
+	<p id="demo"></p>
+	<br><br><br>
+<footer>
+<div class="footer_bottom">
+    <div class="container1">
+      <p>Copyright © 2020 Mol's Inn. </p>
+    </div>
+  </div>
+</footer>
+	<script src="ts.js"></script>
+	<script src="stay.js"></script>
+</body>
+</html>
